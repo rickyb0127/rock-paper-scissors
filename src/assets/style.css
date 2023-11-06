@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --scissors-gradient: hsl(39, 89%, 49%), hsl(40, 84%, 53%);
+  --paper-gradient: hsl(230, 89%, 62%), hsl(230, 89%, 65%);
+  --rock-gradient: hsl(349, 71%, 52%), hsl(349, 70%, 56%);
+  --lizard-gradient: hsl(261, 73%, 60%), hsl(261, 72%, 63%);
+  --cyan: hsl(189, 59%, 53%) to hsl(189, 58%, 57%);
+  --dark-text: hsl(229, 25%, 31%);
+  --score-text: hsl(229, 64%, 46%);
+  --header-outline: hsl(217, 16%, 45%);
+  --radial-gradient: hsl(214, 47%, 23%), hsl(237, 49%, 15%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.bg-gradient {
+  background-image: linear-gradient(var(--radial-gradient));
+}
+
+.bg-triangle {
+  background-image: url( '/images/bg-triangle.svg' );
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 313px;
+  height: 288px;
+}
+
+.icon-container {
+  width: 185px;
+  height: 185px;
+  border-radius: 50%;
+  z-index: 10000;
+}
+
+.icon-container.paper {
+  background: linear-gradient(var(--paper-gradient));
+  box-shadow: 0px 8px 1px hsl(230, 89%, 65%, 0.4);
+}
+
+.icon-container.scissors {
+  background: linear-gradient(var(--scissors-gradient));
+  box-shadow: 0px 8px 1px hsl(40, 84%, 53%, 0.4);
+}
+
+.icon-container.rock {
+  background: linear-gradient(var(--rock-gradient));
+  box-shadow: 0px 8px 1px hsl(349, 70%, 56%, 0.4);
+}
+
+.icon-inner {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: var(--white);
+  box-shadow: 0px -8px 1px hsl(217, 16%, 45%, 0.2);
+}
+
+.icon-inner.waiting {
+  background-color: hsl(217, 16%, 45%, 0.2);
+}
