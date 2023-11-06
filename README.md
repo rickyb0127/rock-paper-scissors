@@ -17,8 +17,8 @@ Your users should be able to:
 - Bonus: Play Rock, Paper, Scissors, Lizard, Spock against the computer
 
 ## Links
-- [live site]()
-- [solution]()
+- [live site](https://splendorous-marigold-067f6a.netlify.app/)
+- [solution](https://www.frontendmentor.io/solutions/rock-paper-scissors-with-react-and-tailwind-Zcn01yK93w)
 
 ## Built With
 - React
